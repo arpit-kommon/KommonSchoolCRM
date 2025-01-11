@@ -1,0 +1,871 @@
+<?php
+/* Smarty version 4.5.3, created on 2025-01-06 09:17:10
+  from 'C:\xampp\htdocs\SuiteCRM-8\public\legacy\cache\themes\suite8\modules\Emails\ComposeView.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.5.3',
+  'unifunc' => 'content_677b91869e9019_13385859',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'ef072676f0220bffdb75e5a5ce291d1a91a67935' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\SuiteCRM-8\\public\\legacy\\cache\\themes\\suite8\\modules\\Emails\\ComposeView.tpl',
+      1 => 1736151430,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_677b91869e9019_13385859 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\SuiteCRM-8\\public\\legacy\\include\\Smarty\\plugins\\function.sugar_include.php','function'=>'smarty_function_sugar_include',),1=>array('file'=>'C:\\xampp\\htdocs\\SuiteCRM-8\\public\\legacy\\include\\Smarty\\plugins\\function.sugar_translate.php','function'=>'smarty_function_sugar_translate',),2=>array('file'=>'C:\\xampp\\htdocs\\SuiteCRM-8\\public\\legacy\\include\\Smarty\\plugins\\block.minify.php','function'=>'smarty_block_minify',),3=>array('file'=>'C:\\xampp\\htdocs\\SuiteCRM-8\\public\\legacy\\include\\Smarty\\plugins\\modifier.strip_semicolon.php','function'=>'smarty_modifier_strip_semicolon',),4=>array('file'=>'C:\\xampp\\htdocs\\SuiteCRM-8\\public\\legacy\\include\\Smarty\\plugins\\function.counter.php','function'=>'smarty_function_counter',),5=>array('file'=>'C:\\xampp\\htdocs\\SuiteCRM-8\\public\\legacy\\include\\Smarty\\plugins\\function.sugar_getimage.php','function'=>'smarty_function_sugar_getimage',),6=>array('file'=>'C:\\xampp\\htdocs\\SuiteCRM-8\\public\\legacy\\include\\Smarty\\plugins\\function.html_options.php','function'=>'smarty_function_html_options',),7=>array('file'=>'C:\\xampp\\htdocs\\SuiteCRM-8\\public\\legacy\\include\\Smarty\\plugins\\modifier.escape.php','function'=>'smarty_modifier_escape',),));
+?>
+
+
+
+<?php echo smarty_function_sugar_include(array('include'=>$_smarty_tpl->tpl_vars['includes']->value),$_smarty_tpl);?>
+
+
+<form class="compose-view" id="ComposeView" name="ComposeView" method="POST" action="index.php?module=Emails&action=send">
+<input type="hidden" name="module" value="Emails">
+<input type="hidden" name="action" value="<?php echo $_smarty_tpl->tpl_vars['ACTION']->value;?>
+">
+<input type="hidden" name="record" value="<?php echo $_smarty_tpl->tpl_vars['RECORD']->value;?>
+">
+<input type="hidden" name="type" value="out">
+<input type="hidden" name="send" value="1">
+<input type="hidden" name="return_module" value="<?php echo $_smarty_tpl->tpl_vars['RETURN_MODULE']->value;?>
+">
+<input type="hidden" name="return_action" value="<?php echo $_smarty_tpl->tpl_vars['RETURN_ACTION']->value;?>
+">
+<input type="hidden" name="return_id" value="<?php echo $_smarty_tpl->tpl_vars['RETURN_ID']->value;?>
+">
+<input type="hidden" name="inbound_email_id" value="<?php echo $_smarty_tpl->tpl_vars['INBOUND_ID']->value;?>
+">
+<div id="EditView_tabs">
+
+<ul class="nav nav-tabs">
+</ul>
+<div class="clearfix"></div>
+<div class="tab-content" style="padding: 0; border: 0;">
+
+<div class="tab-pane panel-collapse">&nbsp;</div>
+</div>
+
+<div class="panel-content">
+<div>&nbsp;</div>
+
+
+
+
+<div class="panel panel-default">
+<div class="panel-heading ">
+<a class="" role="button" data-toggle="collapse-edit" aria-expanded="false">
+<div class="col-xs-10 col-sm-11 col-md-11">
+<?php echo smarty_function_sugar_translate(array('label'=>'LBL_COMPOSE_MODULE_NAME','module'=>'Emails'),$_smarty_tpl);?>
+
+</div>
+</a>
+</div>
+<div class="panel-body panel-collapse collapse in" id="detailpanel_-1">
+<div class="tab-content">
+<!-- tab_panel_content.tpl -->
+<div class="row edit-view-row">
+
+
+
+<div class="col-xs-12 col-sm-6 edit-view-row-item edit-view-bordered" data-field="emails_email_templates_name">
+
+
+<div class="col-xs-12 col-sm-4 label" data-label="LBL_EMAIL_TEMPLATE">
+
+<?php $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('minify', array());
+$_block_repeat=true;
+echo smarty_block_minify(array(), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();
+$_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, "label", "label", null);
+echo smarty_function_sugar_translate(array('label'=>'LBL_EMAIL_TEMPLATE','module'=>'Emails'),$_smarty_tpl);
+$_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);
+echo smarty_modifier_strip_semicolon($_smarty_tpl->tpl_vars['label']->value);?>
+:
+
+<?php $_block_repeat=false;
+echo smarty_block_minify(array(), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="relate" field="emails_email_templates_name"  >
+<?php echo smarty_function_counter(array('name'=>"panelFieldCount",'print'=>false),$_smarty_tpl);?>
+
+
+<input type="text" name="<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['name'];?>
+" class="sqsEnabled" tabindex="0" id="<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['name'];?>
+" size="" value="<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['value'];?>
+" title='' autocomplete="off"  	 >
+<input type="hidden" name="<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['id_name'];?>
+" 
+id="<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['id_name'];?>
+" 
+value="<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_idb']['value'];?>
+">
+<span class="id-ff multiple selectcrossbtn">
+<button type="button" name="btn_<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['name'];?>
+" id="btn_<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['name'];?>
+" tabindex="0" title="<?php echo smarty_function_sugar_translate(array('label'=>"LBL_SELECT_BUTTON_TITLE"),$_smarty_tpl);?>
+" class="firstChild" value="<?php echo smarty_function_sugar_translate(array('label'=>"LBL_SELECT_BUTTON_LABEL"),$_smarty_tpl);?>
+"
+onclick='open_popup(
+"<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['module'];?>
+", 
+600, 
+400, 
+"", 
+true, 
+false, 
+{"call_back_function":"$.fn.EmailsComposeView.onTemplateSelect","form_name":"ComposeView","field_to_name_array":{"id":"emails_email_templates_idb","name":"emails_email_templates_name"}}, 
+"single", 
+true
+);' >
+<?php echo smarty_function_sugar_getimage(array('name'=>"cursor",'attr'=>'border="0"'),$_smarty_tpl);?>
+
+</button>
+<button type="button" name="btn_clr_<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['name'];?>
+" id="btn_clr_<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['name'];?>
+" tabindex="0" title="<?php echo smarty_function_sugar_translate(array('label'=>"LBL_ACCESSKEY_CLEAR_RELATE_TITLE"),$_smarty_tpl);?>
+"  class="lastChild"
+onclick="SUGAR.clearRelateField(this.form, '<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['name'];?>
+', '<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['id_name'];?>
+');"  value="<?php echo smarty_function_sugar_translate(array('label'=>"LBL_ACCESSKEY_CLEAR_RELATE_LABEL"),$_smarty_tpl);?>
+" >
+<?php echo smarty_function_sugar_getimage(array('name'=>"cross",'attr'=>'border="0"'),$_smarty_tpl);?>
+
+</button>
+</span>
+<?php echo '<script'; ?>
+ type="text/javascript">
+SUGAR.util.doWhen(
+		"typeof(sqs_objects) != 'undefined' && typeof(sqs_objects['<?php echo $_smarty_tpl->tpl_vars['form_name']->value;?>
+_<?php echo $_smarty_tpl->tpl_vars['fields']->value['emails_email_templates_name']['name'];?>
+']) != 'undefined'",
+		enableQS
+);
+<?php echo '</script'; ?>
+>
+</div>
+<div class="edit-dotted-border"></div>
+
+<!-- [/hide] -->
+</div>
+
+
+<div class="col-xs-12 col-sm-6 edit-view-row-item edit-view-bordered" data-field="parent_name">
+
+
+<div class="col-xs-12 col-sm-4 label" data-label="LBL_EMAIL_RELATE">
+
+<?php $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('minify', array());
+$_block_repeat=true;
+echo smarty_block_minify(array(), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();
+$_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, "label", "label", null);
+echo smarty_function_sugar_translate(array('label'=>'LBL_EMAIL_RELATE','module'=>'Emails'),$_smarty_tpl);
+$_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);
+echo smarty_modifier_strip_semicolon($_smarty_tpl->tpl_vars['label']->value);?>
+:
+
+<?php $_block_repeat=false;
+echo smarty_block_minify(array(), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="parent" field="parent_name"  >
+<?php echo smarty_function_counter(array('name'=>"panelFieldCount",'print'=>false),$_smarty_tpl);?>
+
+
+<select name='parent_type' tabindex="0" id='parent_type' title=''  onchange='document.<?php echo $_smarty_tpl->tpl_vars['form_name']->value;?>
+.<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['name'];?>
+.value="";document.<?php echo $_smarty_tpl->tpl_vars['form_name']->value;?>
+.parent_id.value=""; changeParentQS("<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['name'];?>
+"); checkParentType(document.<?php echo $_smarty_tpl->tpl_vars['form_name']->value;?>
+.parent_type.value, document.<?php echo $_smarty_tpl->tpl_vars['form_name']->value;?>
+.btn_<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['name'];?>
+);'>
+<?php echo smarty_function_html_options(array('options'=>$_smarty_tpl->tpl_vars['fields']->value['parent_name']['options'],'selected'=>$_smarty_tpl->tpl_vars['fields']->value['parent_type']['value'],'sortoptions'=>true),$_smarty_tpl);?>
+
+</select>
+<?php if (empty($_smarty_tpl->tpl_vars['fields']->value['parent_name']['options'][$_smarty_tpl->tpl_vars['fields']->value['parent_type']['value']])) {
+$_smarty_tpl->_assignInScope('keepParent', 0);
+} else {
+$_smarty_tpl->_assignInScope('keepParent', 1);
+}?>
+<input type="text" name="<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['name'];?>
+" id="<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['name'];?>
+" class="sqsEnabled" tabindex="0"
+size="" <?php if ($_smarty_tpl->tpl_vars['keepParent']->value) {?>value="<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['value'];?>
+"<?php }?> autocomplete="off"><input type="hidden" name="<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_id']['name'];?>
+" id="<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_id']['name'];?>
+"
+<?php if ($_smarty_tpl->tpl_vars['keepParent']->value) {?>value="<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_id']['value'];?>
+"<?php }?>>
+<span class="id-ff multiple selectcrossbtn">
+<button type="button" name="btn_<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['name'];?>
+" id="btn_<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['name'];?>
+" tabindex="0"
+title="<?php echo smarty_function_sugar_translate(array('label'=>"LBL_SELECT_BUTTON_TITLE"),$_smarty_tpl);?>
+" class="button firstChild" value="<?php echo smarty_function_sugar_translate(array('label'=>"LBL_SELECT_BUTTON_LABEL"),$_smarty_tpl);?>
+"
+onclick='open_popup(document.<?php echo $_smarty_tpl->tpl_vars['form_name']->value;?>
+.parent_type.value,600, 400, "", true, false, {"call_back_function":"$.fn.EmailsComposeView.onParentSelect","form_name":"ComposeView","field_to_name_array":{"id":"parent_id","name":"parent_name","email1":"email1"}}, "single", true);' ><span class="suitepicon suitepicon-action-select"></span></button><button type="button" name="btn_clr_<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['name'];?>
+" id="btn_clr_<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['name'];?>
+" tabindex="0" title="<?php echo smarty_function_sugar_translate(array('label'=>''),$_smarty_tpl);?>
+" class="button lastChild" onclick="this.form.<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_name']['name'];?>
+.value = ''; this.form.<?php echo $_smarty_tpl->tpl_vars['fields']->value['parent_id']['name'];?>
+.value = '';" value="<?php echo smarty_function_sugar_translate(array('label'=>''),$_smarty_tpl);?>
+" ><span class="suitepicon suitepicon-action-clear"></span></button>
+</span>
+
+<?php echo '<script'; ?>
+ type="text/javascript">
+if (typeof(changeParentQS) == 'undefined'){
+function changeParentQS(field) {
+    if(typeof sqs_objects == 'undefined') {
+       return;
+    }
+	field = YAHOO.util.Dom.get(field);
+    var form = field.form;
+    var sqsId = form.id + "_" + field.id;
+    var typeField =  form.elements.parent_type;
+    var new_module = typeField.value;
+    //Update the SQS globals to reflect the new module choice
+    if (typeof(QSFieldsArray[sqsId]) != 'undefined')
+    {
+        QSFieldsArray[sqsId].sqs.modules = new Array(new_module);
+    }
+	if(typeof QSProcessedFieldsArray != 'undefined')
+    {
+	   QSProcessedFieldsArray[sqsId] = false;
+    }
+    if(sqs_objects[sqsId] == undefined){
+    	return;
+    }
+    sqs_objects[sqsId]["modules"] = new Array(new_module);
+    if(typeof(disabledModules) != 'undefined' && typeof(disabledModules[new_module]) != 'undefined') {
+		sqs_objects[sqsId]["disable"] = true;
+		field.readOnly = true;
+	} else {
+		sqs_objects[sqsId]["disable"] = false;
+		field.readOnly = false;
+    }
+    enableQS(false);
+}}
+<?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+>var disabledModules=[];<?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript">if(typeof sqs_objects == 'undefined'){var sqs_objects = new Array;}sqs_objects['ComposeView_parent_name']={"form":"ComposeView","method":"query","modules":["<?php if (!empty($_smarty_tpl->tpl_vars['fields']->value['parent_type']['value'])) {
+echo $_smarty_tpl->tpl_vars['fields']->value['parent_type']['value'];
+} else { ?>Accounts<?php }?>"],"group":"or","field_list":["name","id"],"populate_list":["parent_name","parent_id"],"required_list":["parent_id"],"conditions":[{"name":"name","op":"like_custom","end":"%","value":""}],"order":"name","limit":"30","no_match_text":"No Match"};<?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+>
+//change this in case it wasn't the default on editing existing items.
+$(document).ready(function(){
+	changeParentQS("parent_name")
+});
+<?php echo '</script'; ?>
+>
+
+</div>
+<div class="edit-dotted-border"></div>
+
+<!-- [/hide] -->
+</div>
+<div class="clear"></div>
+<div class="clear"></div>
+</div>
+<div class="row edit-view-row">
+
+
+
+<div class="col-xs-12 col-sm-12 edit-view-row-item" data-field="from_addr_name">
+
+
+<div class="col-xs-12 col-sm-2 label" data-label="">
+
+<?php $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('minify', array());
+$_block_repeat=true;
+echo smarty_block_minify(array(), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();
+$_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, "label", "label", null);
+echo smarty_function_sugar_translate(array('label'=>'LBL_LIST_FROM_ADDR','module'=>'Emails'),$_smarty_tpl);
+$_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);
+echo smarty_modifier_strip_semicolon($_smarty_tpl->tpl_vars['label']->value);?>
+:
+
+<?php $_block_repeat=false;
+echo smarty_block_minify(array(), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="varchar" field="from_addr_name" colspan='3' >
+<?php echo smarty_function_counter(array('name'=>"panelFieldCount",'print'=>false),$_smarty_tpl);?>
+
+
+<?php if (strlen($_smarty_tpl->tpl_vars['fields']->value['from_addr_name']['value']) <= 0) {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['from_addr_name']['default_value']);
+} else {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['from_addr_name']['value']);
+}?>
+<input type='text' name='<?php echo $_smarty_tpl->tpl_vars['fields']->value['from_addr_name']['name'];?>
+'
+id='<?php echo $_smarty_tpl->tpl_vars['fields']->value['from_addr_name']['name'];?>
+' size='30'
+value='<?php echo $_smarty_tpl->tpl_vars['value']->value;?>
+' title=''      >
+</div>
+<div class="edit-dotted-border"></div>
+
+<!-- [/hide] -->
+</div>
+<div class="clear"></div>
+</div>
+<div class="row edit-view-row">
+
+
+
+<div class="col-xs-12 col-sm-12 edit-view-row-item" data-field="to_addrs_names">
+
+
+<div class="col-xs-12 col-sm-2 label" data-label="to_addrs_names">
+
+<?php $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('minify', array());
+$_block_repeat=true;
+echo smarty_block_minify(array(), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();
+$_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, "label", "label", null);
+echo smarty_function_sugar_translate(array('label'=>'LBL_TO','module'=>'Emails'),$_smarty_tpl);
+$_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);
+echo smarty_modifier_strip_semicolon($_smarty_tpl->tpl_vars['label']->value);?>
+:
+
+<?php $_block_repeat=false;
+echo smarty_block_minify(array(), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="varchar" field="to_addrs_names" colspan='3' >
+<?php echo smarty_function_counter(array('name'=>"panelFieldCount",'print'=>false),$_smarty_tpl);?>
+
+
+<?php if (strlen($_smarty_tpl->tpl_vars['fields']->value['to_addrs_names']['value']) <= 0) {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['to_addrs_names']['default_value']);
+} else {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['to_addrs_names']['value']);
+}?>
+<input type='text' name='<?php echo $_smarty_tpl->tpl_vars['fields']->value['to_addrs_names']['name'];?>
+'
+id='<?php echo $_smarty_tpl->tpl_vars['fields']->value['to_addrs_names']['name'];?>
+' size='30'
+value='<?php echo $_smarty_tpl->tpl_vars['value']->value;?>
+' title=''      >
+</div>
+<div class="edit-dotted-border"></div>
+
+<!-- [/hide] -->
+</div>
+<div class="clear"></div>
+</div>
+<div class="row edit-view-row">
+
+
+
+<div class="col-xs-12 col-sm-12 edit-view-row-item" data-field="cc_addrs_names">
+
+
+<div class="col-xs-12 col-sm-2 label" data-label="cc_addrs_names">
+
+<?php $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('minify', array());
+$_block_repeat=true;
+echo smarty_block_minify(array(), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();
+$_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, "label", "label", null);
+echo smarty_function_sugar_translate(array('label'=>'LBL_CC','module'=>'Emails'),$_smarty_tpl);
+$_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);
+echo smarty_modifier_strip_semicolon($_smarty_tpl->tpl_vars['label']->value);?>
+:
+
+<?php $_block_repeat=false;
+echo smarty_block_minify(array(), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="varchar" field="cc_addrs_names" colspan='3' >
+<?php echo smarty_function_counter(array('name'=>"panelFieldCount",'print'=>false),$_smarty_tpl);?>
+
+
+<?php if (strlen($_smarty_tpl->tpl_vars['fields']->value['cc_addrs_names']['value']) <= 0) {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['cc_addrs_names']['default_value']);
+} else {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['cc_addrs_names']['value']);
+}?>
+<input type='text' name='<?php echo $_smarty_tpl->tpl_vars['fields']->value['cc_addrs_names']['name'];?>
+'
+id='<?php echo $_smarty_tpl->tpl_vars['fields']->value['cc_addrs_names']['name'];?>
+' size='30'
+value='<?php echo $_smarty_tpl->tpl_vars['value']->value;?>
+' title=''      >
+</div>
+<div class="edit-dotted-border"></div>
+
+<!-- [/hide] -->
+</div>
+<div class="clear"></div>
+</div>
+<div class="row edit-view-row">
+
+
+
+<div class="col-xs-12 col-sm-12 edit-view-row-item" data-field="bcc_addrs_names">
+
+
+<div class="col-xs-12 col-sm-2 label" data-label="bcc_addrs_names">
+
+<?php $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('minify', array());
+$_block_repeat=true;
+echo smarty_block_minify(array(), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();
+$_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, "label", "label", null);
+echo smarty_function_sugar_translate(array('label'=>'LBL_BCC','module'=>'Emails'),$_smarty_tpl);
+$_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);
+echo smarty_modifier_strip_semicolon($_smarty_tpl->tpl_vars['label']->value);?>
+:
+
+<?php $_block_repeat=false;
+echo smarty_block_minify(array(), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="varchar" field="bcc_addrs_names" colspan='3' >
+<?php echo smarty_function_counter(array('name'=>"panelFieldCount",'print'=>false),$_smarty_tpl);?>
+
+
+<?php if (strlen($_smarty_tpl->tpl_vars['fields']->value['bcc_addrs_names']['value']) <= 0) {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['bcc_addrs_names']['default_value']);
+} else {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['bcc_addrs_names']['value']);
+}?>
+<input type='text' name='<?php echo $_smarty_tpl->tpl_vars['fields']->value['bcc_addrs_names']['name'];?>
+'
+id='<?php echo $_smarty_tpl->tpl_vars['fields']->value['bcc_addrs_names']['name'];?>
+' size='30'
+value='<?php echo $_smarty_tpl->tpl_vars['value']->value;?>
+' title=''      >
+</div>
+<div class="edit-dotted-border"></div>
+
+<!-- [/hide] -->
+</div>
+<div class="clear"></div>
+</div>
+<div class="row edit-view-row">
+
+
+
+<div class="col-xs-12 col-sm-12 edit-view-row-item" data-field="name">
+
+
+<div class="col-xs-12 col-sm-2 label" data-label="LBL_SUBJECT">
+
+<?php $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('minify', array());
+$_block_repeat=true;
+echo smarty_block_minify(array(), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();
+$_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, "label", "label", null);
+echo smarty_function_sugar_translate(array('label'=>'LBL_SUBJECT','module'=>'Emails'),$_smarty_tpl);
+$_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);
+echo smarty_modifier_strip_semicolon($_smarty_tpl->tpl_vars['label']->value);?>
+:
+
+<?php $_block_repeat=false;
+echo smarty_block_minify(array(), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="name" field="name" colspan='3' >
+<?php echo smarty_function_counter(array('name'=>"panelFieldCount",'print'=>false),$_smarty_tpl);?>
+
+
+<?php if (strlen($_smarty_tpl->tpl_vars['fields']->value['name']['value']) <= 0) {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['name']['default_value']);
+} else {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['name']['value']);
+}?>
+<input type='text' name='<?php echo $_smarty_tpl->tpl_vars['fields']->value['name']['name'];?>
+'
+id='<?php echo $_smarty_tpl->tpl_vars['fields']->value['name']['name'];?>
+' size='30'
+maxlength='255'        value='<?php echo $_smarty_tpl->tpl_vars['value']->value;?>
+' title=''      >
+</div>
+<div class="edit-dotted-border"></div>
+
+<!-- [/hide] -->
+</div>
+<div class="clear"></div>
+</div>
+<div class="row edit-view-row">
+
+
+
+<div class="col-xs-12 col-sm-12 edit-view-row-item" data-field="description">
+
+
+<div class="col-xs-12 col-sm-2 label" data-label="description">
+
+<?php $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('minify', array());
+$_block_repeat=true;
+echo smarty_block_minify(array(), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();
+$_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, "label", "label", null);
+echo smarty_function_sugar_translate(array('label'=>'LBL_BODY','module'=>'Emails'),$_smarty_tpl);
+$_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);
+echo smarty_modifier_strip_semicolon($_smarty_tpl->tpl_vars['label']->value);?>
+:
+
+<?php $_block_repeat=false;
+echo smarty_block_minify(array(), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="text" field="description" colspan='3' >
+<?php echo smarty_function_counter(array('name'=>"panelFieldCount",'print'=>false),$_smarty_tpl);?>
+
+
+<?php if (empty($_smarty_tpl->tpl_vars['fields']->value['description']['value'])) {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['description']['default_value']);
+} else {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['description']['value']);
+}?>
+<textarea  id='<?php echo $_smarty_tpl->tpl_vars['fields']->value['description']['name'];?>
+' name='<?php echo $_smarty_tpl->tpl_vars['fields']->value['description']['name'];?>
+'
+    rows="6"
+    cols="80"
+    title='' tabindex="0" 
+     ><?php echo $_smarty_tpl->tpl_vars['value']->value;?>
+</textarea>
+
+</div>
+<div class="edit-dotted-border"></div>
+
+<!-- [/hide] -->
+</div>
+<div class="clear"></div>
+</div>
+<div class="row edit-view-row">
+
+
+
+<div class="col-xs-12 col-sm-12 edit-view-row-item" data-field="description_html">
+
+
+<div class="col-xs-12 col-sm-2 label" data-label="description_html">
+
+<?php $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('minify', array());
+$_block_repeat=true;
+echo smarty_block_minify(array(), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();
+$_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, "label", "label", null);
+echo smarty_function_sugar_translate(array('label'=>'LBL_BODY','module'=>'Emails'),$_smarty_tpl);
+$_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);
+echo smarty_modifier_strip_semicolon($_smarty_tpl->tpl_vars['label']->value);?>
+:
+
+<?php $_block_repeat=false;
+echo smarty_block_minify(array(), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="emailbody" field="description_html" colspan='3' >
+<?php echo smarty_function_counter(array('name'=>"panelFieldCount",'print'=>false),$_smarty_tpl);?>
+
+
+<?php if (strlen($_smarty_tpl->tpl_vars['fields']->value['description_html']['value']) <= 0) {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['description_html']['default_value']);
+} else {
+$_smarty_tpl->_assignInScope('value', $_smarty_tpl->tpl_vars['fields']->value['description_html']['value']);
+}?>
+<input type='text' name='<?php echo $_smarty_tpl->tpl_vars['fields']->value['description_html']['name'];?>
+'
+id='<?php echo $_smarty_tpl->tpl_vars['fields']->value['description_html']['name'];?>
+' size='30'
+value='<?php echo $_smarty_tpl->tpl_vars['value']->value;?>
+' title=''      >
+</div>
+<div class="edit-dotted-border"></div>
+
+<!-- [/hide] -->
+</div>
+<div class="clear"></div>
+</div>
+<div class="row edit-view-row">
+
+
+
+<div class="col-xs-12 col-sm-12 edit-view-row-item" data-field="is_only_plain_text">
+
+
+<div class="col-xs-12 col-sm-2 label" data-label="">
+
+<?php $_smarty_tpl->smarty->_cache['_tag_stack'][] = array('minify', array());
+$_block_repeat=true;
+echo smarty_block_minify(array(), null, $_smarty_tpl, $_block_repeat);
+while ($_block_repeat) {
+ob_start();
+$_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, "label", "label", null);
+echo smarty_function_sugar_translate(array('label'=>'LBL_SEND_IN_PLAIN_TEXT','module'=>'Emails'),$_smarty_tpl);
+$_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);
+echo smarty_modifier_strip_semicolon($_smarty_tpl->tpl_vars['label']->value);?>
+:
+
+<?php $_block_repeat=false;
+echo smarty_block_minify(array(), ob_get_clean(), $_smarty_tpl, $_block_repeat);
+}
+array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
+</div>
+
+<div class="col-xs-12 col-sm-8 edit-view-field " type="bool" field="is_only_plain_text" colspan='3' >
+<?php echo smarty_function_counter(array('name'=>"panelFieldCount",'print'=>false),$_smarty_tpl);?>
+
+
+<?php if (strval($_smarty_tpl->tpl_vars['fields']->value['is_only_plain_text']['value']) == "1" || strval($_smarty_tpl->tpl_vars['fields']->value['is_only_plain_text']['value']) == "yes" || strval($_smarty_tpl->tpl_vars['fields']->value['is_only_plain_text']['value']) == "on") {?> 
+<?php $_smarty_tpl->_assignInScope('checked', 'checked="checked"');
+} else {
+$_smarty_tpl->_assignInScope('checked', '');
+}?>
+<input type="hidden" name="<?php echo $_smarty_tpl->tpl_vars['fields']->value['is_only_plain_text']['name'];?>
+" value="0"> 
+<input type="checkbox" id="<?php echo $_smarty_tpl->tpl_vars['fields']->value['is_only_plain_text']['name'];?>
+" 
+name="<?php echo $_smarty_tpl->tpl_vars['fields']->value['is_only_plain_text']['name'];?>
+" 
+value="1" title='' tabindex="0" <?php echo $_smarty_tpl->tpl_vars['checked']->value;?>
+ >
+</div>
+<div class="edit-dotted-border"></div>
+
+<!-- [/hide] -->
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="attachments">
+<div class="file-attachments"></div>
+<div class="document-attachments"></div>
+</div>
+<div class="panel panel-default panel-email-compose">
+<div class="panel-body">
+
+
+<div class="custom-buttons">
+<button class="btn btn-send-email" title="<?php echo $_smarty_tpl->tpl_vars['MOD']->value['LBL_SEND_BUTTON_TITLE'];?>
+"><span class="glyphicon glyphicon-send"></span></button>
+<button class="vertical-separator"></button>
+<button class="btn btn-attach-file" title="<?php echo $_smarty_tpl->tpl_vars['MOD']->value['LBL_ATTACH_FILES'];?>
+"><span class="glyphicon glyphicon-paperclip"></span></button>
+<button class="btn btn-attach-document" title="<?php echo $_smarty_tpl->tpl_vars['MOD']->value['LBL_ATTACH_DOCUMENTS'];?>
+"><span class="glyphicon suitepicon suitepicon-module-documents"></span></button>
+<button class="vertical-separator"></button>
+<button class="btn btn-save-draft" title="<?php echo $_smarty_tpl->tpl_vars['MOD']->value['LBL_SAVE_AS_DRAFT_BUTTON_TITLE'];?>
+"><span class="glyphicon glyphicon-floppy-save"></span></button>
+<button class="btn btn-disregard-draft" title="<?php echo $_smarty_tpl->tpl_vars['MOD']->value['LBL_DISREGARD_DRAFT_BUTTON_TITLE'];?>
+"><span class="glyphicon glyphicon-trash"></span></button>
+</div>
+</div>
+</div>
+<?php if (!$_smarty_tpl->tpl_vars['IS_MODAL']->value) {?>
+
+<?php echo '<script'; ?>
+ type="text/javascript">
+
+        var selectTab = function(tab) {
+            $('#EditView_tabs div.tab-content div.tab-pane-NOBOOTSTRAPTOGGLER').hide();
+            $('#EditView_tabs div.tab-content div.tab-pane-NOBOOTSTRAPTOGGLER').eq(tab).show().addClass('active').addClass('in');
+        };
+
+        var selectTabOnError = function(tab) {
+            selectTab(tab);
+            $('#EditView_tabs ul.nav.nav-tabs li').removeClass('active');
+            $('#EditView_tabs ul.nav.nav-tabs li a').css('color', '');
+
+            $('#EditView_tabs ul.nav.nav-tabs li').eq(tab).find('a').first().css('color', 'red');
+            $('#EditView_tabs ul.nav.nav-tabs li').eq(tab).addClass('active');
+
+        };
+
+        var selectTabOnErrorInputHandle = function(inputHandle) {
+            var tab = $(inputHandle).closest('.tab-pane-NOBOOTSTRAPTOGGLER').attr('id').match(/^detailpanel_(.*)$/)[1];
+            selectTabOnError(tab);
+        };
+
+
+        $(function(){
+            $('#EditView_tabs ul.nav.nav-tabs li > a[data-toggle="tab"]').click(function(e){
+                if(typeof $(this).parent().find('a').first().attr('id') != 'undefined') {
+                    var tab = parseInt($(this).parent().find('a').first().attr('id').match(/^tab(?<number>(.)*)$/)[1]);
+                    selectTab(tab);
+                }
+            });
+
+            $('a[data-toggle="collapse-edit"]').click(function(e){
+                if($(this).hasClass('collapsed')) {
+                  // Expand panel
+                    // Change style of .panel-header
+                    $(this).removeClass('collapsed');
+                    // Expand .panel-body
+                    $(this).parents('.panel').find('.panel-body').removeClass('in').addClass('in');
+                } else {
+                  // Collapse panel
+                    // Change style of .panel-header
+                    $(this).addClass('collapsed');
+                    // Collapse .panel-body
+                    $(this).parents('.panel').find('.panel-body').removeClass('in').removeClass('in');
+                }
+            });
+        });
+        <?php echo '</script'; ?>
+>
+
+<?php echo '<script'; ?>
+>
+        
+      $(document).ready(function() {
+        $('#ComposeView').EmailsComposeView(<?php if ($_smarty_tpl->tpl_vars['RETURN_MODULE']->value != 'Emails' && $_smarty_tpl->tpl_vars['RETURN_ID']->value) {?>{
+          'attachment': {
+            'module': '<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['RETURN_MODULE']->value,'javascript');?>
+',
+            'id': '<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['RETURN_ID']->value,'javascript');?>
+'
+          }
+        }<?php }?>);
+      });
+      $( "#emails_email_templates_name" ).change(function() {
+          $.fn.EmailsComposeView.onTemplateChange()
+      });
+    <?php echo '</script'; ?>
+>
+<?php }?>
+</form>
+<?php echo '<script'; ?>
+ type="text/javascript">
+addForm('ComposeView');addToValidate('ComposeView', 'name', 'name', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_SUBJECT','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'date_entered_date', 'date', false,'Date Created' );
+addToValidate('ComposeView', 'date_modified_date', 'date', false,'Date Modified' );
+addToValidate('ComposeView', 'modified_user_id', 'assigned_user_name', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_MODIFIED','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'modified_by_name', 'relate', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_MODIFIED_NAME','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'created_by', 'assigned_user_name', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_CREATED','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'created_by_name', 'relate', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_CREATED','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'description', 'text', false,'<?php echo smarty_function_sugar_translate(array('label'=>'description','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'deleted', 'bool', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_DELETED','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'assigned_user_id', 'relate', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_ASSIGNED_TO_ID','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'assigned_user_name', 'relate', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_ASSIGNED_TO_NAME','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'orphaned', 'bool', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_ORPHANED','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'last_synced_date', 'date', false,'Last Synchronised' );
+addToValidate('ComposeView', 'reply_to_addr', 'varchar', false,'<?php echo smarty_function_sugar_translate(array('label'=>'reply_to_addr','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'to_addrs_names', 'varchar', false,'<?php echo smarty_function_sugar_translate(array('label'=>'to_addrs_names','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'cc_addrs_names', 'varchar', false,'<?php echo smarty_function_sugar_translate(array('label'=>'cc_addrs_names','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'bcc_addrs_names', 'varchar', false,'<?php echo smarty_function_sugar_translate(array('label'=>'bcc_addrs_names','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'imap_keywords', 'varchar', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_IMAP_KEYWORDS','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'raw_source', 'varchar', false,'<?php echo smarty_function_sugar_translate(array('label'=>'raw_source','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'description_html', 'emailbody', false,'<?php echo smarty_function_sugar_translate(array('label'=>'description_html','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'date_sent_received_date', 'date', false,'Date Sent/Received' );
+addToValidate('ComposeView', 'message_id', 'varchar', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_MESSAGE_ID','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'type', 'enum', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_LIST_TYPE','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'status', 'enum', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_STATUS','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'flagged', 'bool', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_EMAIL_FLAGGED','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'reply_to_status', 'bool', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_EMAIL_REPLY_TO_STATUS','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'intent', 'varchar', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_INTENT','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'mailbox_id', 'id', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_MAILBOX_ID','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'parent_name', 'parent', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_EMAIL_RELATE','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'parent_type', 'varchar', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_PARENT_TYPE','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'parent_id', 'id', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_PARENT_ID','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'indicator', 'function', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_INDICATOR','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'subject', 'function', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_SUBJECT','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'attachment', 'function', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_ATTACHMENTS','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'has_attachment', 'function', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_HAS_ATTACHMENT_INDICATOR','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'category_id', 'enum', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_CATEGORY','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'emails_email_templates_name', 'relate', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_EMAIL_TEMPLATE','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidate('ComposeView', 'opt_in', 'function', false,'<?php echo smarty_function_sugar_translate(array('label'=>'LBL_OPT_IN','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+' );
+addToValidateBinaryDependency('ComposeView', 'assigned_user_name', 'alpha', false,'<?php echo smarty_function_sugar_translate(array('label'=>'ERR_SQS_NO_MATCH_FIELD','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+: <?php echo smarty_function_sugar_translate(array('label'=>'LBL_ASSIGNED_TO','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+', 'assigned_user_id' );
+addToValidateBinaryDependency('ComposeView', 'emails_email_templates_name', 'alpha', false,'<?php echo smarty_function_sugar_translate(array('label'=>'ERR_SQS_NO_MATCH_FIELD','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+: <?php echo smarty_function_sugar_translate(array('label'=>'LBL_EMAIL_TEMPLATE','module'=>'Emails','for_js'=>true),$_smarty_tpl);?>
+', 'emails_email_templates_idb' );
+<?php echo '</script'; ?>
+><?php echo '<script'; ?>
+ language="javascript">if(typeof sqs_objects == 'undefined'){var sqs_objects = new Array;}sqs_objects['ComposeView_emails_email_templates_name']={"form":"ComposeView","method":"query","modules":["EmailTemplates"],"group":"or","field_list":["name","id"],"populate_list":["emails_email_templates_name","emails_email_templates_idb"],"required_list":["parent_id"],"conditions":[{"name":"name","op":"like_custom","end":"%","value":""}],"order":"name","limit":"30","no_match_text":"No Match"};sqs_objects['ComposeView_parent_name']={"form":"ComposeView","method":"query","modules":["Accounts"],"group":"or","field_list":["name","id"],"populate_list":["parent_name","parent_id"],"required_list":["parent_id"],"conditions":[{"name":"name","op":"like_custom","end":"%","value":""}],"order":"name","limit":"30","no_match_text":"No Match"};<?php echo '</script'; ?>
+>
+<?php }
+}
